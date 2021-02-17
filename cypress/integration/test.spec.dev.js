@@ -1,10 +1,5 @@
 "use strict";
 
-it('all buttons loaded', function () {
-  cy.visit("http://127.0.0.1:5500/calculatorB/index.html");
-  cy.get("#calculator__display__numbers__previous").should('contain', '');
-  cy.get("#calculator__display__numbers__current").should('contain', "1234567890");
-});
 it('all num buttons work', function () {
   cy.visit("http://127.0.0.1:5500/calculatorB/index.html");
   cy.get('#num_1').click();
@@ -18,7 +13,7 @@ it('all num buttons work', function () {
   cy.get('#num_9').click();
   cy.get('#num_0').click();
   cy.get("#calculator__display__numbers__previous").should('contain', '');
-  cy.get("#calculator__display__numbers__current").should('contain', "1234567890");
+  cy.get("#calculator__display__numbers__current").should('contain', '1234567890');
 });
 it('adds numbers together (3+4= 7)', function () {
   cy.visit("http://127.0.0.1:5500/calculatorB/index.html");
