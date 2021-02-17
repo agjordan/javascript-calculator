@@ -4,5 +4,11 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
     steps:
-      - name: Cypress tests
-        uses: cypress-io/github-action@v2
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: install cypress
+        uses: npm install
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v1
