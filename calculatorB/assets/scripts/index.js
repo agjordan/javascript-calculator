@@ -120,3 +120,4 @@ const evaluateCalc = () => {
     prevDisplay.innerHTML = previousCalc + '=';
     lastClickedEqual = true;
 };
+
