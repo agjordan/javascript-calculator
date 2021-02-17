@@ -1,0 +1,23 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "e2e": "cypress open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agjordan/javascript-calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agjordan/javascript-calculator/issues"
+  },
+  "homepage": "https://github.com/agjordan/javascript-calculator#readme",
+  "devDependencies": {
+    "cypress": "^6.5.0"
+  }
+}

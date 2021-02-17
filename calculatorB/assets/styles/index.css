@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  height: 568px;
+  width: 320px;
+  border-radius: 40px;
+}
+.calculator .calculator__display {
+  height: 200px;
+  background: #ebeaeb;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: right;
+  padding: 10px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border: 3px solid #1c3041;
+  border-bottom: none;
+}
+.calculator .calculator__display .calculator__display__numbers {
+  color: #1c3041;
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+}
+.calculator .calculator__display .calculator__display__numbers #calculator__display__numbers__previous {
+  opacity: 50%;
+}
+.calculator .calculator__inputs {
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  background: #fbf5f3;
+  padding-top: 20px;
+  border: 3px solid black;
+  border-bottom-right-radius: 45px;
+  border-bottom-left-radius: 0;
+  display: grid;
+  grid-template-areas: "plus minus times divide" "num_1 num_2 num_3 del" "num_4 num_5 num_6 del" "num_7 num_8 num_9 equal" "period . num_0 equal";
+}
+.calculator .calculator__inputs .calculator__inputs__button {
+  color: #1c3041;
+  background: #fbf5f3;
+  display: inline-grid;
+  place-items: center;
+  height: 100%;
+  user-select: none;
+}
+.calculator .calculator__inputs .calculator__inputs__button:active {
+  background: #fe7f2d;
+  border-radius: 10%;
+  opacity: 50%;
+}
+.calculator .calculator__inputs #sym_plus {
+  grid-area: plus;
+}
+.calculator .calculator__inputs #sym_minus {
+  grid-area: minus;
+}
+.calculator .calculator__inputs #sym_times {
+  grid-area: times;
+}
+.calculator .calculator__inputs #sym_divide {
+  grid-area: divide;
+}
+.calculator .calculator__inputs #num_1 {
+  grid-area: num_1;
+}
+.calculator .calculator__inputs #num_2 {
+  grid-area: num_2;
+}
+.calculator .calculator__inputs #num_3 {
+  grid-area: num_3;
+}
+.calculator .calculator__inputs #num_4 {
+  grid-area: num_4;
+}
+.calculator .calculator__inputs #num_5 {
+  grid-area: num_5;
+}
+.calculator .calculator__inputs #num_6 {
+  grid-area: num_6;
+}
+.calculator .calculator__inputs #num_7 {
+  grid-area: num_7;
+}
+.calculator .calculator__inputs #num_8 {
+  grid-area: num_8;
+}
+.calculator .calculator__inputs #num_9 {
+  grid-area: num_9;
+}
+.calculator .calculator__inputs #num_0 {
+  grid-area: num_0;
+}
+.calculator .calculator__inputs #num_period {
+  grid-area: period;
+}
+.calculator .calculator__inputs #sym_clear {
+  grid-area: del;
+}
+.calculator .calculator__inputs #sym_equal {
+  grid-area: equal;
+  background: #fe7f2d;
+  border-bottom-right-radius: 42px;
+}
+.calculator .calculator__inputs #sym_equal:active {
+  background: #fbf5f3;
+}
+
+#joy {
+  visibility: hidden;
+}

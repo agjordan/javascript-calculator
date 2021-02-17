@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+//colors
+
+$calc-display-color: #ebeaeb;
+$calc-display-numbers-color: #1c3041;
+$calc-button-color: #c9c9cf;
+$calc-input-button-color: #1c3041;
+$highlight-color: #fe7f2d;
+$calc-button-background: #fbf5f3;
+//typography
+$display-font-family: "Roboto", sans-serif;
+$display-font-size: 50px;
+$inputs-font-family: "Roboto", sans-serif;
+$inputs-font-size: 50px;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  height: 568px;
+  width: 320px;
+  border-radius: 40px;
+
+  .calculator__display {
+    height: 200px;
+    background: $calc-display-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+    padding: 10px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border: 3px solid $calc-display-numbers-color;
+    border-bottom: none;
+
+    .calculator__display__numbers {
+      color: $calc-display-numbers-color;
+      font-family: $display-font-family;
+      font-size: $display-font-size;
+
+      #calculator__display__numbers__previous {
+        opacity: 50%;
+      }
+    }
+  }
+
+  .calculator__inputs {
+    font-size: $inputs-font-size;
+    font-family: $inputs-font-family;
+    background: $calc-button-background;
+    padding-top: 20px;
+    border: 3px solid black;
+    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 0;
+    display: grid;
+    grid-template-areas:
+      "plus minus times divide"
+      "num_1 num_2 num_3 del"
+      "num_4 num_5 num_6 del"
+      "num_7 num_8 num_9 equal"
+      "period . num_0 equal";
+
+    .calculator__inputs__button {
+      color: $calc-input-button-color;
+      background: $calc-button-background;
+      display: inline-grid;
+      place-items: center;
+      height: 100%;
+      user-select: none;
+
+      &:active {
+        background: $highlight-color;
+        border-radius: 10%;
+        opacity: 50%;
+      }
+    }
+
+    #sym_plus {
+      grid-area: plus;
+    }
+    #sym_minus {
+      grid-area: minus;
+    }
+    #sym_times {
+      grid-area: times;
+    }
+    #sym_divide {
+      grid-area: divide;
+    }
+    #num_1 {
+      grid-area: num_1;
+    }
+    #num_2 {
+      grid-area: num_2;
+    }
+    #num_3 {
+      grid-area: num_3;
+    }
+    #num_4 {
+      grid-area: num_4;
+    }
+    #num_5 {
+      grid-area: num_5;
+    }
+    #num_6 {
+      grid-area: num_6;
+    }
+    #num_7 {
+      grid-area: num_7;
+    }
+    #num_8 {
+      grid-area: num_8;
+    }
+    #num_9 {
+      grid-area: num_9;
+    }
+    #num_0 {
+      grid-area: num_0;
+    }
+    #num_period {
+      grid-area: period;
+    }
+    #sym_clear {
+      grid-area: del;
+      // background: $highlight-color;
+      // &:active {
+      //     background: $calc-button-background;
+      // }
+    }
+    #sym_equal {
+      grid-area: equal;
+      background: $highlight-color;
+      border-bottom-right-radius: 42px;
+
+      &:active {
+        background: $calc-button-background;
+      }
+    }
+  }
+}
+
+#joy {
+    visibility: hidden;
+}
