@@ -15,38 +15,135 @@
   <body>
     <div class="calculator">
       <div class="calculator__display">
-        <div id="changeLayoutBtn" onclick="changeInputLayout()">
-          <i class="far fa-circle" id="changeLayoutIcon"></i>
+        <div class="calculator__display__numbers">
+          <div id="calculator__display__numbers__previous"></div>
+          <div id="calculator__display__numbers__current"></div>
         </div>
-        <div class='calculator__display__numbers'>
-        <div id="calculator__display__numbers__previous"></div>
-        <div id="calculator__display__numbers__current"></div>
-      </div>
       </div>
       <div class="calculator__inputs">
-        <div class="calculator__inputs__symbols">
-          <div class="calculator__inputs__button" id="sym_clear" onclick="handleBtnClick(event)">C</div>
-          <div class="calculator__inputs__button" id="sym_+" onclick="handleBtnClick(event)">+</div>
-          <div class="calculator__inputs__button" id="sym_-" onclick="handleBtnClick(event)">-</div>
-          <div class="calculator__inputs__button" id="sym_×" onclick="handleBtnClick(event)">×</div>
-          <div class="calculator__inputs__button" id="sym_÷" onclick="handleBtnClick(event)">÷</div>
-          <div class="calculator__inputs__button" id="sym_=" onclick="handleBtnClick(event)">=</div>
+        <div
+          class="calculator__inputs__button"
+          id="sym_plus"
+          onclick="handleBtnClick(event)"
+        >
+          +
+        </div>
+        <div
+          class="calculator__inputs__button"
+          id="sym_minus"
+          onclick="handleBtnClick(event)"
+        >
+          -
+        </div>
+        <div
+          class="calculator__inputs__button"
+          id="sym_times"
+          onclick="handleBtnClick(event)"
+        >
+          ×
+        </div>
+        <div
+          class="calculator__inputs__button"
+          id="sym_divide"
+          onclick="handleBtnClick(event)"
+        >
+          ÷
         </div>
 
-        <div class="square calculator__inputs__numbers" id="numpad">
-          <div class="calculator__inputs__button" id="num_1" onclick="handleBtnClick(event)">1</div>
-          <div class="calculator__inputs__button" id="num_2" onclick="handleBtnClick(event)">2</div>
-          <div class="calculator__inputs__button" id="num_3" onclick="handleBtnClick(event)">3</div>
-          <div class="calculator__inputs__button" id="num_4" onclick="handleBtnClick(event)">4</div>
-          <div class="calculator__inputs__button" id="num_5" onclick="handleBtnClick(event)">5</div>
-          <div class="calculator__inputs__button" id="num_6" onclick="handleBtnClick(event)">6</div>
-          <div class="calculator__inputs__button" id="num_7" onclick="handleBtnClick(event)">7</div>
-          <div class="calculator__inputs__button" id="num_8" onclick="handleBtnClick(event)">8</div>
-          <div class="calculator__inputs__button" id="num_9" onclick="handleBtnClick(event)">9</div>
-          <div class="calculator__inputs__button" id="num_0" onclick="handleBtnClick(event)">0</div>
-          <div class="calculator__inputs__button" id="num_." onclick="handleBtnClick(event)">.</div>
+        <div
+          class="calculator__inputs__button"
+          id="num_1"
+          onclick="handleBtnClick(event)"
+        >
+          1
+        </div>
+        <div
+          class="calculator__inputs__button"
+          id="num_2"
+          onclick="handleBtnClick(event)"
+        >
+          2
+        </div>
+        <div
+          class="calculator__inputs__button"
+          id="num_3"
+          onclick="handleBtnClick(event)"
+        >
+          3
+        </div>
+        <div
+          class="calculator__inputs__button"
+          id="num_4"
+          onclick="handleBtnClick(event)"
+        >
+          4
+        </div>
+        <div
+          class="calculator__inputs__button"
+          id="num_5"
+          onclick="handleBtnClick(event)"
+        >
+          5
+        </div>
+        <div
+          class="calculator__inputs__button"
+          id="num_6"
+          onclick="handleBtnClick(event)"
+        >
+          6
+        </div>
+        <div
+          class="calculator__inputs__button"
+          id="num_7"
+          onclick="handleBtnClick(event)"
+        >
+          7
+        </div>
+        <div
+          class="calculator__inputs__button"
+          id="num_8"
+          onclick="handleBtnClick(event)"
+        >
+          8
+        </div>
+        <div
+          class="calculator__inputs__button"
+          id="num_9"
+          onclick="handleBtnClick(event)"
+        >
+          9
+        </div>
+        <div
+          class="calculator__inputs__button"
+          id="num_0"
+          onclick="handleBtnClick(event)"
+        >
+          0
+        </div>
+        <div
+          class="calculator__inputs__button"
+          id="num_period"
+          onclick="handleBtnClick(event)"
+        >
+          .
+        </div>
+        <div
+          class="calculator__inputs__button"
+          id="sym_clear"
+          onclick="handleBtnClick(event)"
+        >
+          C
+        </div>
+        <div
+          class="calculator__inputs__button"
+          id="sym_equal"
+          onclick="handleBtnClick(event)"
+        >
+          =
         </div>
       </div>
     </div>
+
+    <p id="joy">I'm basically just a toy</p>
   </body>
 </html>
